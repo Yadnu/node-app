@@ -6,6 +6,15 @@ function greet(firstName) {
 }
 greet("Yadnu");
 const v = () => {
-    return "Hello World";
+    console.log("Hello World");
 };
-console.log(v);
+function isLegal(user) {
+    if (user.age > 18) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+const call = isLegal({ firstName: "YJ", age: 40, lastName: "Yadnu" });
+console.log(call);
